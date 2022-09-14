@@ -8,11 +8,9 @@ def add(x):
     return x + 1
 
 
-
 def test_add(devCmd):
     print(eval(devCmd))
 
     ss = devCmd.split(',')
 
-    assert int(ss[0])+int(ss[1]) == 4
-
+    assert int(ss[0]) + int(ss[1]) == 4

@@ -8,7 +8,6 @@ def add(x):
     return x + 1
 
 
-
 @pytest.mark.parametrize('a', ['自动化测试', '测试开发'])
 def test_add(a):
     assert add(3) == 4

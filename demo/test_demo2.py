@@ -24,7 +24,7 @@ def test_add6():
 
 @allure.epic('登录王大鹏')
 @allure.feature('登录测试')
-@pytest.mark.abc
+@pytest.mark.add
 class TestA:
     @allure.story('add测试')
     @allure.link('bug管理')
@@ -42,8 +42,7 @@ class TestA:
 
         with allure.step('点击登录'):
             print('点击登录')
-            assert 1==2
-
+            assert 1 == 2
 
     @allure.story('update测试')
     def test_add8(self):
@@ -60,7 +59,6 @@ class TestA:
     @pytest.mark.skipif(1 == 1, reason='不想执行')
     def test_add11(self):
         assert 1 == 1
-
 
 
 @pytest.mark.parametrize('x,y,z', ((1, 2, 2), (1, 2, 3), (1, 3, 3), (1, 4, 4)), ids=['a', 'b', 'c', 'd'])
