@@ -20,6 +20,6 @@ def end_all_case():
 
 
 @pytest.fixture()
-def add_init():
+def cal_init():
     data = Calculator()
     return data
