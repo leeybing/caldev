@@ -3,6 +3,7 @@
 # time: 2022-09-10
 
 import pytest
+from HDev.pythoncode.calculator import Calculator
 
 
 @pytest.fixture()
@@ -19,5 +20,6 @@ def end_all_case():
 
 
 @pytest.fixture()
-def add(x, y):
-    return x + y
+def add_init():
+    data = Calculator()
+    return data
