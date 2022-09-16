@@ -9,7 +9,7 @@ import pytest
 class TestAdd:
 
     @pytest.mark.P0
-    @pytest.mark.parametrize('x,y,result', [[1, 2, 4], [99, 99, 198], [-99, -99, -198]])
+    @pytest.mark.parametrize('x,y,result', [[1, 2, 4], [99, 99, 198], [-99, -99, -198], [4.22, 2, 6.22]])
     def test_add(self, start_case, x, y, result, cal_init, end_all_case):
         res = cal_init.add(x, y)
         assert res == result
